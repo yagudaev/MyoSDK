@@ -6,4 +6,4 @@
 //  Copyright (c) 2014 Michael Yagudaev. All rights reserved.
 //
 
-${TEST_EXAMPLE}
+

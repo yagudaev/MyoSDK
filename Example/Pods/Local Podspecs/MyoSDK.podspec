@@ -13,8 +13,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/yagudaev/MyoSDK"
   s.license          = 'MIT'
   s.author           = { "Michael Yagudaev" => "michael@yagudaev.com" }
-  s.source           = { :http => "https://s3.amazonaws.com/thalmicdownloads/ios/myo-ios-sdk-beta1.zip" }
-  # s.source           = { :git => "https://github.com/yagudaev/MyoSDK.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/yagudaev/MyoSDK.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/yagudaev'
 
   s.platform     = :ios, '7.0'

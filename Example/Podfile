@@ -3,6 +3,4 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'MyoSDK', :exclusive => true do
   pod "MyoSDK", :path => "../"
-
-  
 end

@@ -1,0 +1,14 @@
+PODS:
+  - MyoSDK (0.1.1)
+
+DEPENDENCIES:
+  - MyoSDK (from `../`)
+
+EXTERNAL SOURCES:
+  MyoSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MyoSDK: 01ed84f7293c25ef39b7b52c58a3e4783ea0c88b
+
+COCOAPODS: 0.34.2
