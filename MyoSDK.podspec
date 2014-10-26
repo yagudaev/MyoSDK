@@ -13,20 +13,14 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/yagudaev/MyoSDK"
   s.license          = 'MIT'
   s.author           = { "Michael Yagudaev" => "michael@yagudaev.com" }
-  s.source           = { :http => "https://s3.amazonaws.com/thalmicdownloads/ios/myo-ios-sdk-beta1.zip" }
-  # s.source           = { :git => "https://github.com/yagudaev/MyoSDK.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/yagudaev/MyoSDK.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/yagudaev'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'MyoKit.framework/Headers/MyoKit.h'
-  s.resource_bundles = {
-    'MyoSDK' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.preserve_paths = 'MyoKit.framework/*'
+  # s.public_header_files = 'Framework/MyoKit.framework/**/*.h'
+  # s.preserve_paths = 'Framework/MyoKit.framework/**/*'
   s.frameworks = 'MyoKit', 'CoreBluetooth', 'SystemConfiguration'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_frameworks = 'Framework/MyoKit.framework'
 end

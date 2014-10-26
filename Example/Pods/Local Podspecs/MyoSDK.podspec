@@ -19,13 +19,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'MyoKit.framework/Headers/MyoKit.h'
-  s.resource_bundles = {
-    'MyoSDK' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.preserve_paths = 'MyoKit.framework/*'
+  # s.public_header_files = 'Framework/MyoKit.framework/**/*.h'
+  # s.preserve_paths = 'Framework/MyoKit.framework/**/*'
   s.frameworks = 'MyoKit', 'CoreBluetooth', 'SystemConfiguration'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_frameworks = 'Framework/MyoKit.framework'
 end
