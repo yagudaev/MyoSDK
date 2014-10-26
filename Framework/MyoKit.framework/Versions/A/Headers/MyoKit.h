@@ -17,3 +17,4 @@
 #import <MyoKit/TLMOrientationEvent.h>
 #import <MyoKit/TLMPose.h>
 #import <MyoKit/TLMArmRecognizedEvent.h>
+#import <MyoKit/TLMArmLostEvent.h>
